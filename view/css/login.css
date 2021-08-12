@@ -1,0 +1,38 @@
+body{
+	margin: 0;
+	background-image: url(https://cdn.hipwallpaper.com/i/62/26/HKoPzd.jpg);
+}
+.logindiv{
+	display: block;
+	background-color: rgb(255, 229, 204);
+	width: auto;
+	height: auto;
+	text-align: center;
+	outline: 2px red solid;
+	margin: 230px auto;
+
+}
+.submit{
+	font-size: 15px;
+	border: 2px red solid;
+	color: #ffffff;
+	background-color: #ff8000;
+	border-radius: 10px;
+	font-family: sans-serif;
+    font-weight: 100;
+    width: 25%;
+    height: 35%;
+    padding: 5px;
+}
+.logindiv:hover{
+	box-shadow: 2px 2px 2px red;
+	transform: scale(1.1);
+}
+.submit:hover{
+	background-color: rgb(204, 102, 0);
+    font-weight: bold;
+	
+}
+.register:hover{
+	color: red;
+}
