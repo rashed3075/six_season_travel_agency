@@ -99,9 +99,12 @@ function input_data($data)
 
 				
 				
-				
-
-			  $result = register($fname,$lname,$gender,$dob,$religion,$praddress,$peaddress,$phone,$email,$user,$password,$fileName);
+				$getResult = get($user);
+				if($getResult){
+					echo "User name already exist";
+				}
+				else{
+					 $result = register($fname,$lname,$gender,$dob,$religion,$praddress,$peaddress,$phone,$email,$user,$password,$fileName);
               if($result){
               	echo "Registration Successfully Done...!!!";
               	
@@ -111,6 +114,10 @@ function input_data($data)
               }
 
 				
+
+				}
+
+			 
 
 
 

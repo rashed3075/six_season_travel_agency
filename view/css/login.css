@@ -3,20 +3,21 @@ body{
 	background-image: url(https://cdn.hipwallpaper.com/i/62/26/HKoPzd.jpg);
 }
 .logindiv{
-	display: block;
-	background-color: rgb(255, 229, 204);
-	width: auto;
+		display: block;
+	background-color: rgb(255, 178, 102);
+	width: 320px;
 	height: auto;
 	text-align: center;
 	outline: 2px red solid;
 	margin: 230px auto;
 
+
 }
 .submit{
 	font-size: 15px;
 	border: 2px red solid;
-	color: #ffffff;
-	background-color: #ff8000;
+	color: #000000;
+	background-color: rgb(153, 255, 153);
 	border-radius: 10px;
 	font-family: sans-serif;
     font-weight: 100;
@@ -26,13 +27,32 @@ body{
 }
 .logindiv:hover{
 	box-shadow: 2px 2px 2px red;
-	transform: scale(1.1);
+	transform: scale(1.01);
 }
 .submit:hover{
-	background-color: rgb(204, 102, 0);
+	background-color: rgb(0, 204, 102);
     font-weight: bold;
 	
 }
 .register:hover{
 	color: red;
+}
+ .loginTag  {
+	color: rgb(0, 0, 204);
+	font-family: sans-serif;
+	display: block;
+	margin-top: 10px;
+}
+.user{
+	color: rgb(0, 0, 204);
+
+}
+.Password{
+	color: rgb(0, 0, 204);
+}
+.regask{
+	color: rgb(0, 0, 204);
+}
+.register{
+	color: rgb(0, 0, 204);
 }
