@@ -1,5 +1,7 @@
+
 .home:hover{
 	background-color: orange;
+	background-size: 40% 10%;
 
 }
 .hometext{

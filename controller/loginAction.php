@@ -46,8 +46,14 @@ include '../model/authenticate.php';
 				$_SESSION['userName']=$result['userName'];
 				$_SESSION['password']=$result['password'];
 				$_SESSION['image']=$result['image'];
-			 // header("location:dashbord.php");
+				setcookie("fname", $result['fname'], time() + (86400 * 30), "/");
+				setcookie("lname", $result['lname'], time() + (86400 * 30), "/");
+				setcookie("userName", $result['userName'], time() + (86400 * 30), "/");
+				setcookie("password", $result['password'], time() + (86400 * 30), "/");
 				echo "login done";
+				//sleep(3);
+				header("location:../view/dashbord.php");
+
 			}
 			else{
 				echo "Failed to login";
