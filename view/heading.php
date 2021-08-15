@@ -1,5 +1,5 @@
 <?php
-	if(!isset($_SESSION['userName'])||!isset($_COOKIE['userName'])){
+	if(!isset($_SESSION['userName'])||!isset($_COOKIE['fname'])){
 		header("location:../view/login.html");
 	}
 

@@ -44,11 +44,16 @@ $fname = $lname = $phone = $email = $userName = $password="";
     }
     $result = updateProfile($fname,$lname,$phone,$email,$userName,$password);
     if($result){
-      echo " <span style='color: green;''><b>Profile Updated Successfully</b> </span>";
+            //Cookie
+    setcookie("fname", $fname, time() + (86400 * 30), "/");
+    setcookie("lname", $lname, time() + (86400 * 30), "/");
+      echo "<span style='color: green;''><b>Profile Updated Successfully</b> </span>";
       $_SESSION['fname']=$fname;
       $_SESSION['lname']=$lname;
       $_SESSION['phone']=$phone;
       $_SESSION['email']=$email;
+
+
     }
     else{
        echo " <span style='color: red;''><b>Updating failed</b> </span>";

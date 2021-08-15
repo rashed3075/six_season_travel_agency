@@ -42,6 +42,7 @@ if ($_SERVER['REQUEST_METHOD']==="POST") {
     	if($update){
     		echo"<span  style='color: green;''>Update profile Successfully</span>";
     		$_SESSION['password']=$postpass;
+    		setcookie("password", $postpass, time() + (86400 * 30), "/");
     	}
     	else{
     		echo"<span  style='color: red;''>Update profile Successfully</span>";

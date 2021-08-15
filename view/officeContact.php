@@ -1,4 +1,4 @@
-z<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -8,27 +8,27 @@ z<!DOCTYPE html>
 	<?php
 	session_start();
 	if(!isset($_SESSION['userName'])){
-		header("location: ../Controller/admin_login.php");
+		header("location: ../view/login.php");
 	}
 	?>
 	<?php
-	include '../View/header.php';
+	include '../view/header.html';
 
 	?>
 	<?php
-	include '../View/heading.php';
+	include '../view/heading.php';
 
 	?>
-	<div style="width: 100%; height:350px; background-color: rgb(153, 153, 255); text-align: center;">
+	<div style="width: 100%; height:auto; background-color: rgb(153, 153, 255); text-align: center;">
 		<table width="100%" height="350px">
 			<tr>
 				<td width="50%" height="350px" style="text-align: center;">
-					<img src="add.png" width=50% height="200px"><br>
-					<a href="../Controller/addContact.php" style="background-color: red; color: white;width: 100%;">Add Contact Information</a>
+					<img src="../image/add.png" width=50% height="200px"><br>
+					<a href="../view/addContact.php" style="background-color: red; color: white;width: 100%;">Add Contact Information</a>
 				</td>
 				<td width="50%" height="350px" style="text-align: center;">
-					<img src="update.png" width=50% height="200px"><br>
-					<a href="../Controller/updateContact.php"style="background-color: red; color: white;">Update Contact Information</a>
+					<img src="../image/update.png" width=50% height="200px"><br>
+					<a href="../view/updateContact.php"style="background-color: red; color: white;">Update Contact Information</a>
 				</td>
 			</tr>
 		</table>
@@ -36,7 +36,7 @@ z<!DOCTYPE html>
 </div>
 
 	<?php 
-	include '../View/footer.php';
+	include '../view/footer.php';
 	?>
 
 

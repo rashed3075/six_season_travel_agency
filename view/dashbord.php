@@ -12,7 +12,7 @@
 	session_start();
 	if(!isset($_SESSION['userName'])){
 		
-		//header("location: ../Controller/admin_login.php");
+		header("location: ../view/login.php");
 	}
 	?>
 
