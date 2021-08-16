@@ -1,15 +1,15 @@
 <?php
-	if(!isset($_SESSION['userName'])||!isset($_COOKIE['fname'])){
+	if(!isset($_SESSION['userName'])){
 		header("location:../view/login.html");
 	}
 
 
 $fname = $lname = "";
-if(isset($_COOKIE['fname'])){
-	$fname = $_COOKIE['fname'];
+if(isset($_SESSION['fname'])){
+	$fname = $_SESSION['fname'];
 }
-if(isset($_COOKIE['lname'])){
-	$lname = $_COOKIE['lname'];
+if(isset($_SESSION['lname'])){
+	$lname = $_SESSION['lname'];
 }
 ?>
 <!DOCTYPE html>
